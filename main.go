@@ -2,17 +2,25 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
+	"mymodule/d0_variables"
 )
 
-func main() {
-	fmt.Println("Hello, Go!")
-	fmt.Println("Current time:", time.Now().Format(time.RFC1123))
-	fmt.Println("Random number is", rand.Intn(10))
-	fmt.Println("Calculated value:", add(10, 32))
-}
+// package level declaration
+// var actorName string = "Paing"
+// var movieName string = "LearnGo"
+// var season int = 8
 
-func add(x int, y int) int {
-	return x + y
+func main() {
+
+	d0_variables.Testing()
+	d0_variables.Calculation()
+
+	// Below code will get error for not capitalized
+	// fmt.Println("Import var:", d0_variables.planetSpeed)
+
+	var i int
+	i = 42
+	k := 99
+	fmt.Printf("%v, %T \n", k, k)
+	fmt.Printf("%v, %T \n", i, i)
 }

@@ -1,3 +1,3 @@
-module paing.blog/hello
+module mymodule
 
 go 1.25.4
